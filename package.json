@@ -1,9 +1,9 @@
 {
   "name": "chat-server",
   "version": "1.0.0",
-  "main": "сервер.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node сервер.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
