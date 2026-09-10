@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*", // Дозволяє підключатися з будь-якого джерела
+    origin: "*",
     methods: ["GET", "POST"]
   }
 });
@@ -26,5 +26,5 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`Сервер чату запущено на порту ${PORT}`);
+  console.log(`Сервер запущено на порту ${PORT}`);
 });
